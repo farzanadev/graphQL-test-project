@@ -11,9 +11,9 @@ module.exports = {
 
     Mutation: {
         addMusic: async (_,{input}) => {
-            console.log(input, "--------------------------------");
+            console.log(input);
             const data = await musicCollection.insertOne(input)
-            console.log(input, data, "--------------------------------");
+            console.log(input, data);
             return "input";
         }
     }
