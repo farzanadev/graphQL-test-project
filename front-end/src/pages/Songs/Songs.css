@@ -1,0 +1,11 @@
+.songs-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+}
+
+.single-div{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+}
