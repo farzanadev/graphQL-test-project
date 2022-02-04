@@ -7,11 +7,12 @@ const client = new MongoClient(url);
 // Database Name
 const dbName = 'simpleGraphQL';
 
-    client.connect();
-    console.log('Connected successfully to server');
-    const db = client.db(dbName);
-    const musicCollection = db.collection('newCollections');
+client.connect();
+console.log('Connected successfully to server');
+const db = client.db(dbName);
+const musicCollection = db.collection('newCollections');
+const userCollection = db.collection('userCollections');
 
 
-module.exports = { musicCollection }
+module.exports = { musicCollection, userCollection }
 

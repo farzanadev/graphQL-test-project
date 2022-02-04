@@ -2,7 +2,6 @@ const express = require('express')
 const app = express();
 const { ApolloServer, gql } = require('apollo-server-express')
 const db = require('./config/dbConnect');
-const newRoute = require('./routes/new')
 const typeDefs = require('./graphql/schema/index');
 const resolvers = require('./graphql/resolver/index');
 
