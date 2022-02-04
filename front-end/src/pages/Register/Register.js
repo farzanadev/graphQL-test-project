@@ -2,7 +2,7 @@ import React from 'react';
 import { gql, useMutation } from '@apollo/client';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
-
+import './Register.css' 
 
 const ADD_USER = gql` 
 mutation addUser($name:String, $email:String ,$password:Int){
@@ -27,7 +27,7 @@ const Register = () => {
 
         <>
             <h2>Please Register </h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="pure-form">
+            <form onSubmit={handleSubmit(onSubmit)} className="pure-form login-form">
 
                 <input
                     type="text"

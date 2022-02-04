@@ -1,0 +1,12 @@
+.full-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+}
+
+.all-users{
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+}
+

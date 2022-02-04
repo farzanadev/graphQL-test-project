@@ -1,9 +1,6 @@
-const {userCollection} =require('../../config/dbConnect')
+const { userCollection } = require('../../config/dbConnect')
 
-module.exports={
-
-
-
+module.exports = {
     // add user 
 
     Mutation: {
@@ -13,6 +10,16 @@ module.exports={
             console.log(input, data);
             return "input";
         }
-    }
+    },
+
+    // get user 
+
+    Query: {
+        getUser: async () => {
+            const data = await userCollection.find({}).toArray();
+            console.log(data);
+            return data
+        }
+    },
 
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { gql, useMutation } from '@apollo/client';
 import { useForm } from "react-hook-form";
-
+import './AddSong.css'
 
 const ADD_MUSIC = gql` 
 mutation addMusic($title:String, $singer:String ,$duration:Int){
@@ -25,7 +25,7 @@ const AddSong = () => {
 
         <>
         
-            <form onSubmit={handleSubmit(onSubmit)} >
+            <form onSubmit={handleSubmit(onSubmit)} className='form'>
         
                 <input type="text" id='title' {...register("title")} />
                 <input type="text" id='singer' {...register("singer")} />
