@@ -14,6 +14,7 @@ const Menubar = () => {
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/Songs">Songs</Nav.Link>
                             <Nav.Link as={Link} to="/AddSong">AddSong</Nav.Link>                            
+                            <Nav.Link as={Link} to="/register">Register</Nav.Link>                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -7,13 +7,7 @@ import {
 import Songs from './pages/Songs/Songs';
 import Menubar from './pages/Menubar/Menubar';
 import AddSong from './pages/AddSong/AddSong';
-
-/* 
-lorem50+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-lorem50+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-lorem50+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-lorem50+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
- */
+import Register from './pages/Register/Register';
 
 
 function App() {
@@ -25,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/Songs" element={<Songs />} />
             <Route path="/AddSong" element={<AddSong />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
        
       </BrowserRouter>
