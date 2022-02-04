@@ -18,6 +18,11 @@ module.exports = gql`
         password:Int
       }
 
+      type LoginUser{
+        name:String
+        email:String
+      }
+
     extend type Mutation{
         addUser(input:User):String
     }

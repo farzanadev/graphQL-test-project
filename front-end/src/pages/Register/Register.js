@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql, useMutation } from '@apollo/client';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 
 
 const ADD_USER = gql` 
@@ -14,11 +15,12 @@ const Register = () => {
 
     const { register, handleSubmit } = useForm();
     const [addUser] = useMutation(ADD_USER);
-
+    let navigate = useNavigate();
 
     const onSubmit = data => {
         addUser({ variables: { name: data.name, email: data.email, password: +data.password } })
         console.log({ variables: { name: data.name, email: data.email, password: +data.password } });
+        navigate('/home')
     };
 
     return (
